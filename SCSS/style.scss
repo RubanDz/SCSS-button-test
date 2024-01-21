@@ -25,23 +25,34 @@ $back-color: #FFFFFF;
 .btn_theme_secondary {
    border: $border;
    background-color: $back-color;
+   &:hover {
+      @include btn-hover;
+      background-color: $back-color;
+   }
 }
-.btn_theme_secondary:hover {
-   @include btn-hover;
-   background-color: $back-color;
-}
+
+// .btn_theme_secondary:hover {
+//    @include btn-hover;
+//    background-color: $back-color;
+// }
 
 
 .btn_theme_primary {
    color: $color;
    border: $border;
    background-color: #EE3124;
+   &:hover {
+      @include btn-hover;
+      color: $color;
+      background-color: #B20000;
+   }
 }
-.btn_theme_primary:hover {
-   @include btn-hover;
-   color: $color;
-   background-color: #B20000;
-}
+
+// .btn_theme_primary:hover {
+//    @include btn-hover;
+//    color: $color;
+//    background-color: #B20000;
+// }
 
 
 
